@@ -1,0 +1,93 @@
+h1::after {
+    content: "";
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+    background-color: #2a89f6;
+    padding: 3px 0;
+}
+
+header a {
+    font-size: 1.3em;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionInput {
+    margin: 30px 20px;
+    color: #000;
+}
+
+#sectionInput label {
+    font-size: 25px;
+    position: absolute;
+}
+
+#sectionInput input {
+    font-size: 16px;
+    margin-left: 40px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    width: 70vw;
+}
+
+#sectionInput input::placeholder {
+    color: #000;
+}
+
+#sectionCliente {
+    color: #000;
+    background-color: #86E9FF;
+    margin: 30px 0 50px 0;
+}
+
+#sectionEvento {
+    color: #000;
+    background-color: #8AC1F7;
+}
+
+#sectionCliente, #sectionEvento {
+    width: max(90vw, 100px);
+    border-radius: 10px;
+    position: relative;
+}
+
+#sectionCliente ul, #sectionEvento ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+#sectionCliente ul li, #sectionEvento ul li {
+    margin: 10px 0;
+}
+
+#sectionCliente span, #sectionEvento span {
+    position: absolute;
+    right: 5px;
+    top: -10px;
+}

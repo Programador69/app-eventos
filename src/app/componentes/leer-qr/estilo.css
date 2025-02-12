@@ -1,0 +1,34 @@
+h1::after {
+    content: "";
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+    background-color: #2a89f6;
+    padding: 3px 0;
+}
+
+header a {
+    font-size: 1.3em;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #000;
+}
+
+section {
+    color: #000;
+    text-align: center;
+}
+
+section h2, section span {
+    margin: 20px;
+}

@@ -1,0 +1,48 @@
+h1::after {
+    content: "";
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+    background-color: #2a89f6;
+    padding: 3px 0;
+}
+
+header a {
+    font-size: 1.3em;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #000;
+}
+
+main {
+    padding: 10px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main article {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 5px;
+}
+
+main article span {
+    text-align: center;
+}

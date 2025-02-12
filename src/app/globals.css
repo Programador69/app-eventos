@@ -22,6 +22,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  background-color: #2a89f6;
 }
 
 * {
@@ -39,4 +41,202 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+#panelInicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1::after {
+  content: "BY TECNOLOGIA HUX";
+  position: absolute;
+  font-size: 15px;
+  top: 50px;
+  left: 50vw;
+}
+
+.sectionFormulario {
+  margin: 0 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.sectionFormulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #0a0a0a;
+}
+
+.sectionFormulario ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sectionFormulario ul li a {
+  border-bottom: 2px solid #345;
+}
+
+.sectionFormulario button {
+  width: 50%;
+  padding: 5px;
+  letter-spacing: 1px;
+  align-self: center;
+  border-radius: 8px;
+  background-color: #2a89f6;
+  transition: transform .7s;
+}
+ 
+.sectionFormulario form input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #6b9bfa;
+  color: #171717;
+}
+
+.sectionFormulario form input::placeholder {
+  color: #222;
+}
+
+.sectionFormulario button:active {
+  transform: scale(.7);
+}
+
+.sectionFormulario ul {
+  margin-top: 30px;
+}
+
+.sectionFormulario ul li a {
+  color: #171717;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+footer summary {
+  text-align: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+footer ul {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+#paginaEventos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#paginaEventos header {
+  text-align: center;
+}
+
+#paginaEventos header h1::after {
+  content: "";
+}
+
+.mainEventos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjetaEventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.divNuevaCuenta {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+.divNuevaCuenta p {
+  text-align: center;
+  width: 80%
+}
+
+.divNuevaCuenta a {
+  text-align: center;
+}
+
+.divRecuperarCuenta {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.divRecuperarCuenta form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  color: #0a0a0a;
+}
+
+.divRecuperarCuenta form input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #6b9bfa;
+  color: #171717;
+}
+
+.divRecuperarCuenta form input::placeholder {
+  color: #222;
+  letter-spacing: 0.5;
+}
+
+.divRecuperarCuenta form button {
+  width: 50%;
+  padding: 5px;
+  letter-spacing: 1px;
+  align-self: center;
+  border-radius: 8px;
+  background-color: #2a89f6;
+  transition: transform .7s;
+}
+
+.divRecuperarCuenta form button:active {
+  transform: scale(.7);
 }

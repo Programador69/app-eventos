@@ -1,0 +1,63 @@
+h1::after {
+    content: "";
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+    background-color: #2a89f6;
+    padding: 3px 0;
+}
+
+header a {
+    font-size: 1.3em;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #000;
+}
+
+form {
+    margin-top: 30px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: #000;
+}
+
+form div label {
+    font-size: 1.3em;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    width: 70vw;
+    color: #000;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+form input::placeholder {
+    color: #000;
+}
+
+button {
+    background-color: #1D63F0;
+    padding: 10px 60px;
+    border-radius: 15px;
+    letter-spacing: 1.2;
+}

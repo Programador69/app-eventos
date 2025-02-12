@@ -1,0 +1,109 @@
+h1::after {
+    content: "";
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+    background-color: #2a89f6;
+    padding: 3px 0;
+}
+
+header a {
+    font-size: 1.3em;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #000;
+}
+
+form {
+    margin-top: 30px;
+    height: 550px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+form div label {
+    font-size: 1.3em;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    width: 70vw;
+    color: #000;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+form input::placeholder {
+    color: #000;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(.9);
+}
+
+#labelArchivo {
+    font-size: 15px;
+    background-color: #6B9BFA;
+    color: #eee;
+    padding: 8px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#labelArchivo:active {
+    background-color: #1D63F0;
+}
+
+#divArchivo {
+    position: relative;
+}
+
+#nombreArchivo {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    font-size: 10px;
+}
+
+input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+form div p {
+    text-align: center;
+}
+
+#registrarEvento {
+    margin-top: 30px;
+    background-color: #1D63F0;
+    padding: 10px 30px;
+    border-radius: 15px;
+    letter-spacing: 1.2;
+}
+
+form div:first-child label {
+    font-size: 25px;
+}

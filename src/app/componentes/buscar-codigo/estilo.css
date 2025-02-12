@@ -1,0 +1,54 @@
+h1::after {
+    content: "";
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+    background-color: #2a89f6;
+    padding: 3px 0;
+}
+
+header a {
+    font-size: 1.3em;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #000;
+}
+
+section {
+    margin-top: 30px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+section label {
+    font-size: 1.3em;
+}
+
+section input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    width: 70vw;
+    color: #000;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+section input::placeholder {
+    color: #000;
+}
