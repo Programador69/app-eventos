@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
+    "@yudiel/react-qr-scanner": "^2.2.1",
     "bcryptjs": "^2.4.3",
     "next": "15.1.7",
     "postgres": "^3.4.5",
