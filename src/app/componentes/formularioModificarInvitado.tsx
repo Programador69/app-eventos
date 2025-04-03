@@ -4,11 +4,13 @@ import { FaRegAddressCard } from "react-icons/fa";
 import { FaPhone, FaPeopleGroup } from "react-icons/fa6";
 import { MdOutlineEmail, MdNoteAlt } from "react-icons/md";
 import { TbAlertSquare } from "react-icons/tb";
-import { inter } from "../nuevo-invitado/page";
+import { Inter } from 'next/font/google';
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { EsquemaModificarInvitado } from "../actions/validacionModificarInvitado";
 import { ModificarInvitado } from "../api/modificarInvitado";
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function FormularioModificarInvitado() {
     const { register, handleSubmit, reset, formState:{errors} } = useForm({
