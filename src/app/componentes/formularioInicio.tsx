@@ -1,13 +1,26 @@
 "use client";
 
-import { useActionState } from 'react';
+import { useActionState, useEffect } from 'react';
 import { inicioSesion } from '../actions/inicioSesion';
 import { Inter } from 'next/font/google';
+import { useRouter } from 'next/navigation';
 
 const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function Formulario() {
+    const router = useRouter();
+
     const [state, action, pending] = useActionState(inicioSesion, undefined);
+
+    useEffect(()=> {
+        if (state?.state == true) {
+            router.push("/eventos")
+
+        } else if(state?.state == false) {
+            alert("Usuario o contraseña incorrectos");
+        }
+
+    }, [state?.state, router])
 
     return (
         <form action={action}>

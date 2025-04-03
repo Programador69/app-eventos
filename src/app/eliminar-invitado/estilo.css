@@ -60,4 +60,5 @@ button {
     padding: 10px 40px;
     border-radius: 15px;
     letter-spacing: 1.2;
+    cursor: pointer;
 }

@@ -5,6 +5,7 @@ import CardEvento from "../componentes/card";
 import { Inter } from 'next/font/google';
 import type { Viewport } from 'next'
 import type { Metadata } from 'next'
+import BotonCerrarSesion from "../componentes/botonCerrarSesion";
  
 export const viewport: Viewport = {
   themeColor: '#2a89f6',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
-export default function PaginaEventos() {
+export default async function PaginaEventos() {
     return (
         <div id="paginaEventos" className={inter.className}>
 
@@ -39,6 +40,7 @@ export default function PaginaEventos() {
 
             <aside style={{maxWidth: "70vw", textAlign: "center", margin: "auto"}}>
                 <p>Imagenes generadas por la IA de Gemini y el estudio magico de Canva</p>
+                <BotonCerrarSesion/>
             </aside>
 
             <Pie/>
