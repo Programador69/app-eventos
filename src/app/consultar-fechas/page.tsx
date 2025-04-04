@@ -19,10 +19,10 @@ export default async function ConsultarFechas() {
 
             <main>
               {
-                datos.map(dia => {
+                datos.map((dia, index) => {
                   const color = dia.ocupado ? "#fd4447" : "#8DC693" ;
                   return (
-                    <article key={dia.fecha} style={{backgroundColor: color}}>
+                    <article key={index} style={{backgroundColor: color}}>
                       <span>{dia.fecha}</span>
                     </article>
                   )
