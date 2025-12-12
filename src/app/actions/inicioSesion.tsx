@@ -66,7 +66,7 @@ export async function inicioSesion(state: EstadoFormulario, formData: FormData) 
     }
 }
 
-// Esto es para crear una contraseña hasheada
+// Esto es para crear una contraseña hasheada Programador.11
 // try {
 //     const salt = await bcrypt.genSalt(10);
 //     const hashedPassword = await bcrypt.hash("Programador.11", salt);
@@ -74,7 +74,7 @@ export async function inicioSesion(state: EstadoFormulario, formData: FormData) 
 
 // } catch (error) {
 //         console.error("Error hashing password:", error);
-//         return {
-//             errors: { contra: ["Error hashing password"] },
-//         };
+//         // return {
+//         //     errors: { contra: ["Error hashing password"] },
+//         // };
 //     }
